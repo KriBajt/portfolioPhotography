@@ -52,10 +52,9 @@
                 </ul>
             </div>
         </nav>
-
     </div>
 
-    <div class="content">
+    <div class="subTitle">
         <div>
             <h1>Travel & Nature Photographer</h1>
             <p class="head-text"> I sat high in the mountains and thought of all those ants that surrounded me.
@@ -64,103 +63,107 @@
             <button type="button" class="btn btn-secondary" onclick="shopOptionNav()">Show gallery</button>
             <br>
 
-            <!-- <div id="showOption" class="nav-option-disable">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">All</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fashion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nature</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lifestyle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Buildings</a>
-                    </li>
+            <div class="main">
+                <div class="portfolioGrid" id="showOption">
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                        <button class="btn" onclick="filterSelection('animal')"> Animal</button>
+                        <button class="btn" onclick="filterSelection('people')"> People</button>
+                        <button class="btn" onclick="filterSelection('city')"> Architecture</button>
+                    </div>
 
-                </ul>
-            </div> -->
-            <div class="portfolioGrid" id="showOption">
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                    <button class="btn" onclick="filterSelection('people')"> People</button>
+                    <!-- Portfolio Gallery Grid -->
+                    <div class="row ">
+                        <div class="column nature col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/sahara2.jpg" alt="Mountains" style="width:100%">
+                                <h4>Sahara</h4>
+                                <p>Beautyful view, without stress... </p>
+                            </div>
+                        </div>
+                        <div class="column nature col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/gorgiaMountain.jpg" alt="Lights" style="width:100%">
+                                <h4>Mountains</h4>
+                                <p>Hike in the Truso valley in Georgia</p>
+                            </div>
+                        </div>
+                        <div class="column nature col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/beach.jpg" alt="Nature" style="width:100%">
+                                <h4>Beach</h4>
+                                <p>Best beaches of dominican republic</p>
+                            </div>
+                        </div>
+
+                        <div class="column animal col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/horse.jpg" alt="Animal" style="width:100%">
+                                <h4>Horse</h4>
+                                <p>Beauty nature in Mallorca</p>
+                            </div>
+                        </div>
+                        <div class="column animal col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/wallpaintcat.jpg" alt="animal" style="width:100%">
+                                <h4>WallCats</h4>
+                                <p>Drawing on the wall</p>
+                            </div>
+                        </div>
+                        <div class="column animal col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/monkeyBali.jpg" alt="animal" style="width:100%">
+                                <h4>Monkey</h4>
+                                <p>Monkey Island ➨ Bali</p>
+                            </div>
+                        </div>
+
+                        <div class="column people col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/partyIbiza.jpg" alt="People" style="width:100%">
+                                <h4>Girls</h4>
+                                <p>Party on Ibiza</p>
+                            </div>
+                        </div>
+                        <div class="column people col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/sahara.jpg" alt="People" style="width:100%">
+                                <h4> Faschion</h4>
+                                <p>Sahara faschion ➨ Turban</p>
+                            </div>
+                        </div>
+                        <div class="column people col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/fashionBali.jpg" alt="People" style="width:100%">
+                                <h4>Woman</h4>
+                                <p>Temple Fashion</p>
+                            </div>
+                        </div>
+                        <div class="column city col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/jerusalemmark.jpg" alt="City" style="width:100%">
+                                <h4>Jerusalem</h4>
+                                <p>Market in Jerusalem</p>
+                            </div>
+                        </div>
+                        <div class="column city col-12 col-md-4">
+                            <div class="content">
+                                <img src="/img/scotlandbridge.jpg" alt="City" style="width:100%">
+                                <h4>Bridhe</h4>
+                                <p>Bridhe from Harry Pother movie</p>
+                            </div>
+                        </div>
+                        <div class="column city">
+                            <div class="content">
+                                <img src="/img/singapurCity.jpg" alt="City" style="width:100%">
+                                <h4>Singapur</h4>
+                                <p>Money City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
                 </div>
-
-                <!-- Portfolio Gallery Grid -->
-                <div class="row ">
-                    <div class="column nature">
-                        <div class="content">
-                            <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-                            <h4>Mountains</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                    <div class="column nature">
-                        <div class="content">
-                            <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-                            <h4>Lights</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                    <div class="column nature">
-                        <div class="content">
-                            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-                            <h4>Forest</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-
-                    <div class="column cars">
-                        <div class="content">
-                            <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-                            <h4>Retro</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                    <div class="column cars">
-                        <div class="content">
-                            <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-                            <h4>Fast</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                    <div class="column cars">
-                        <div class="content">
-                            <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-                            <h4>Classic</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-
-                    <div class="column people">
-                        <div class="content">
-                            <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-                            <h4>Girl</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                    <div class="column people">
-                        <div class="content">
-                            <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-                            <h4>Man</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                    <div class="column people">
-                        <div class="content">
-                            <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-                            <h4>Woman</h4>
-                            <p>Lorem ipsum dolor..</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- END GRID -->
             </div>
         </div>
     </div>
